@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "KronaOne-Regular.ttf";
+  src: url(../../assets/fonts/KronaOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilroy-Regular.ttf";
+  src: url(../../assets/fonts/Gilroy-Regular.ttf);
+}
+.hero_main {
+  background-color: #ff7a00;
+  text-align: center;
+  border-top: 1px solid #ffc690;
+}
+.hero_main .hero_bg img {
+  height: 529.5px;
+  width: 331.13px;
+}
+.hero_main h1 span {
+  color: #231a15;
+  font-size: 70px;
+}
+.hero_main h1 {
+  color: white;
+  line-height: 140%;
+  font-family: "KronaOne-Regular.ttf";
+}
+.hero_bg p {
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Gilroy-Regular.ttf";
+}
+
+@media (max-width: 900px) {
+  .hero_main h1 {
+    font-size: 24px;
+  }
+  .hero_main h1 span {
+    font-size: 55px;
+  }
+}
