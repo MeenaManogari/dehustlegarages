@@ -24,9 +24,10 @@ const Lucky = () => {
             <p>Rejection rate is the last year</p>
           </div>
         </div>
+        <div className="dashed"></div>
         <div className="admission_time">
           <h2>
-            You are <span>lucky</span> early bird.
+            You are <span>lucky</span> <span id="lite">early bird.</span>
           </h2>
           <p>
             You have <span>90% chance</span> of getting selected. Use the
