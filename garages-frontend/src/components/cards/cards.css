@@ -4,8 +4,17 @@
   padding: 20px;
   background-color: #f5f5f5;
 }
+
 .cards_main .cards {
   width: 242px;
   height: 479px;
   background-color: white;
+}
+
+@media (max-width: 366px) {
+  .cards_main {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
 }

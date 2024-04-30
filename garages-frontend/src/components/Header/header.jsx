@@ -1,7 +1,10 @@
 import React from "react";
 import Logo from "../../assets/images/garages-logo.png";
 import External from "../../assets/images/external-link.png";
-import Access from "../../assets/icons/access.svg";
+import Ham from "../../assets/icons/hamburger.svg";
+import Globe from "../../assets/icons/globe.svg";
+import cloud from "../../assets/icons/cloud.svg";
+import Arrow from "../../assets/icons/chevron.svg";
 import "./header.css";
 
 const Header = () => {
@@ -9,33 +12,38 @@ const Header = () => {
     <>
       <div className="header_main">
         <img src={Logo} alt="GaragesLogo" />
-        <div className="header_links">
-          <a href="#">Introduction</a>
-          <a href="#">Admissions</a>
-          <a href="#">Curriculum</a>
-        </div>
+
         <div className="header_btns">
-          <button>
-            Apply Now <img src={External} alt="ExternalLink" />
-          </button>
           <a href="#">
-            <img src={Access} alt="access" />
-            Access
+            <img src={cloud} alt="access" />
+            <h4>Download Brochure</h4>
           </a>
+          <button>
+            <h3>Nominate Now</h3> <img src={External} alt="ExternalLink" />
+          </button>
         </div>
       </div>
       <div className="responsive_main">
         <div className="responsive_head">
           <img src={Logo} alt="GaragesLogo" />
-          <a href="#">
-            <img src={Access} alt="access" />
-            Access
-          </a>
+          <button>
+            <h3>Nominate Now</h3> <img src={External} alt="ExternalLink" />
+          </button>
         </div>
-        <div className="header_links">
-          <a href="#">Introduction</a>
-          <a href="#">Admissions</a>
-          <a href="#">Curriculum</a>
+      </div>
+      <div className="responsive_mobile">
+        <img src={Ham} alt="hamburger" id="ham" />
+        <img src={Logo} alt="GaragesLogo" id="logo" />
+        <div class="language">
+          <a onclick="showLanguages()" class="lang-drpdwn-btn">
+            <img src={Globe} alt="language" />
+            English
+            <img src={Arrow} alt="down arrow" />
+          </a>
+          <div class="dropdown-language">
+            <a href="#">English</a>
+            <a href="#">Tamil</a>
+          </div>
         </div>
       </div>
     </>
