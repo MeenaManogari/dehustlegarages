@@ -127,7 +127,7 @@
   font-size: 16px;
   color: white;
   position: absolute;
-  top: 150%;
+  top: 140%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Gilroy-SemiBoldItalic.ttf";
@@ -272,6 +272,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero_bg {
+    gap: 30px;
+  }
+}
+
 @media (max-width: 366px) {
   .hero_main {
     display: none;
@@ -320,7 +326,7 @@
     font-size: 11px;
     color: white;
     position: absolute;
-    top: 125%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Gilroy-SemiBoldItalic.ttf";
@@ -360,7 +366,7 @@
     font-size: 16px;
     text-align: center;
     position: absolute;
-    top: 155%;
+    top: 142%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -399,5 +405,21 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .mob_potentials > p {
+    color: white;
+    padding: 18px 16px;
+    background-color: #ff9738;
+    border-radius: 6px;
+    font-family: "Gilroy-SemiBoldItalic.ttf";
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    top: 145%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
